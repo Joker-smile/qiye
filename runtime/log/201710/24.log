@@ -1,0 +1,30 @@
+[ 2017-10-24T22:23:15+08:00 ] ::1 ::1 GET /qiye/public/
+[ log ] localhost/qiye/public/ [运行时间：0.888050s][吞吐率：1.13req/s] [内存消耗：1,866.63kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'remember_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InZ2cW56Q1VjNE41VERWQUVnSWdRZmc9PSIsInZhbHVlIjoiOTdkZjFndDBBa0xQR0h1VDV6a0diVUV3U2ZPdnl5eFNYdkorZkRGMmxQZGNtcEM0bkNqS1UrZ0MwNjZXNGdaT2k4MWMyZmZaR2VxbzhOY1B6czFMVThOZnVUQ0JqQnFaOWJTalNYelQ0N29kK0hCQTFXcHhoVklXcXE0TU5QcWVhaVlSRFwvM3BBUDBkV1JQWWluaXMwOWt5VTg5NE0xWHVoOVlhdlg5V1pNS21XcTNvQmRnXC9YOHJ0MTZ3OGoranIiLCJtYWMiOiI0ZmEwNGY2NGY1ODZhY2I1NTE0NDhiNmZkMjdkMzQ5YTI0ZDViN2I3OGEyMTU2NDk3ZjFhZDlhNDY1ODkyZWU4In0%3D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508240566; bdshare_firstime=1508240634762; UM_distinctid=15f2a25b39972-0883cb3f62534d-6b1b1279-100200-15f2a25b39a2c9; CNZZDATA1260722023=1658456057-1508240635-null%7C1508240635; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1508677928; PHPSESSID=i853beoeig7ajlo0rmmrn4aho3',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'tp5'[D:\phpStudy\PHPTutorial\WWW\qiye\thinkphp\library\think\db\Connection.php:282]
+
+---------------------------------------------------------------

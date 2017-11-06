@@ -1,0 +1,612 @@
+[ 2017-09-04T17:52:04+08:00 ] 127.0.0.1 127.0.0.1 GET /qiye/public/
+[ log ] localhost/qiye/public/ [运行时间：1.029059s][吞吐率：0.97req/s] [内存消耗：2,698.78kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6ImUyM1V6WEExTzJ0c0dFRGU3OXNmV1E9PSIsInZhbHVlIjoiZHZhUjdncEZmem9GWkJHZFRRZmdraTdBazlGQTR0T2J0eFZMVVF3RmVJMjdoT2RPWFI4NWlRXC8ybUs1MjdvNHliM0c0dHZlRDZLS2ttVGhXbFcrS1B3PT0iLCJtYWMiOiI4MTg3OTdkYjMyMTI3ZTc5MTE2ZDYxN2IzMWQ2MzgwNTNmNjkzNDAwYTZlNWRkMGViZTIzY2RmMjQ4NTY2NWM4In0%3D; laravel_session=eyJpdiI6IlwvUVdQRmVZWnJpYzQ4UFBcL1h6NlRBUT09IiwidmFsdWUiOiIrT1VYMzlaUkhBM3d1bFVMSXB4Nnppa0UrZkt6TEd1WFAxNlNVNUxGMHB0Tm1cL1hldDBaSjVzOGFQaDVuRWJBSFpPXC9lOStIWWpuMkZmMndxSmlVUTFRPT0iLCJtYWMiOiI4Mjg3NTczYmU5ZGNlYjQwNTI5Zjc3NzcwMjg1ZjMxNTc3MzYwY2E3ZTdhNTE3ZmJmODE2ZTBjYThkNjY3MTJiIn0%3D',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\qiye\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\qiye\public/../application/index\view\index\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'getIndexRecommend',
+  4 => 'recommend',
+  5 => 'indexHotArticles',
+  6 => 'getNewArticles',
+  7 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.071004s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.046003s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.001001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`thumb`,`a`.`desc`,`a`.`time`,`a`.`zan`,`a`.`click`,`b`.`catename` FROM `tp_article` `a` INNER JOIN `tp_cate` `b` ON `a`.`cateid`=`b`.`id` ORDER BY a.id desc LIMIT 10   [ RunTime:0.034002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_link` [ RunTime:0.058003s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_link` ORDER BY sort desc  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb` FROM `tp_article` ORDER BY click desc LIMIT 5   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb` FROM `tp_article` WHERE  `recommend` = 1 ORDER BY id desc LIMIT 4    [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_index` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:45+08:00 ] ::1 ::1 GET /qiye/public/
+[ log ] localhost/qiye/public/ [运行时间：0.097006s][吞吐率：10.31req/s] [内存消耗：2,699.21kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\qiye\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\qiye\public/../application/index\view\index\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'getIndexRecommend',
+  4 => 'recommend',
+  5 => 'indexHotArticles',
+  6 => 'getNewArticles',
+  7 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`thumb`,`a`.`desc`,`a`.`time`,`a`.`zan`,`a`.`click`,`b`.`catename` FROM `tp_article` `a` INNER JOIN `tp_cate` `b` ON `a`.`cateid`=`b`.`id` ORDER BY a.id desc LIMIT 10   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_link` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_link` ORDER BY sort desc  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb` FROM `tp_article` ORDER BY click desc LIMIT 5   [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb` FROM `tp_article` WHERE  `recommend` = 1 ORDER BY id desc LIMIT 4    [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_index` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:45+08:00 ] ::1 ::1 GET /qiye/public/static/index/style/jquery.error.js
+[ log ] localhost/qiye/public/static/index/style/jquery.error.js [运行时间：0.096006s][吞吐率：10.42req/s] [内存消耗：1,117.26kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'style',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:46+08:00 ] ::1 ::1 GET /qiye/public/static/index/style/jquery.form.js
+[ log ] localhost/qiye/public/static/index/style/jquery.form.js [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：1,117.26kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'style',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:46+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/loading.gif
+[ log ] localhost/qiye/public/static/index/images/loading.gif [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,117.31kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:46+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/sitemap-dot.gif
+[ log ] localhost/qiye/public/static/index/images/sitemap-dot.gif [运行时间：0.043002s][吞吐率：23.25req/s] [内存消耗：1,117.31kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:47+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/focus-bg2.png
+[ log ] localhost/qiye/public/static/index/images/focus-bg2.png [运行时间：0.025002s][吞吐率：40.00req/s] [内存消耗：1,117.31kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:47+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/scroll.png
+[ log ] localhost/qiye/public/static/index/images/scroll.png [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,117.31kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:47+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/xh_area_title_h3.png
+[ log ] localhost/qiye/public/static/index/images/xh_area_title_h3.png [运行时间：0.024002s][吞吐率：41.66req/s] [内存消耗：1,117.31kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:49+08:00 ] ::1 ::1 GET /qiye/public/index/article/index/artid/9.html
+[ log ] localhost/qiye/public/index/article/index/artid/9.html [运行时间：0.185010s][吞吐率：5.41req/s] [内存消耗：3,488.08kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ D:\phpStudy\WWW\qiye\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\qiye\public/../application/index\view\article\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'getParents',
+  4 => 'hotArticles',
+  5 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `cateid` FROM `tp_article` WHERE  `id` = 9 LIMIT 1    [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate` WHERE  `id` = 4 LIMIT 1    [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_article`  SET `click`=click+1  WHERE  `id` = 9    [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `id` = 9 LIMIT 1    [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  (  cateid IN(1,2,3,4,5,6,7,8,9,4) ) ORDER BY click desc LIMIT 5   [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:49+08:00 ] ::1 ::1 GET /qiye/public/static/index/style/jquery.form.js
+[ log ] localhost/qiye/public/static/index/style/jquery.form.js [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,117.29kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'style',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index/article/index/artid/9.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:49+08:00 ] ::1 ::1 GET /qiye/public/static/index/style/jquery.error.js
+[ log ] localhost/qiye/public/static/index/style/jquery.error.js [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,117.29kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'style',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index/article/index/artid/9.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:50+08:00 ] ::1 ::1 GET /qiye/public/static/index/include/dedeajax2.js
+[ log ] localhost/qiye/public/static/index/include/dedeajax2.js [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：1,117.29kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'include',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index/article/index/artid/9.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:51+08:00 ] ::1 ::1 GET /qiye/public/static/index/style/jquery.error.js
+[ log ] localhost/qiye/public/static/index/style/jquery.error.js [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,117.29kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'style',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index/article/index/artid/9.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:52+08:00 ] ::1 ::1 GET /qiye/public/static/index/style/jquery.form.js
+[ log ] localhost/qiye/public/static/index/style/jquery.form.js [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：1,117.29kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'style',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index/article/index/artid/9.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:52+08:00 ] ::1 ::1 GET /qiye/public/static/index/include/dedeajax2.js
+[ log ] localhost/qiye/public/static/index/include/dedeajax2.js [运行时间：0.017001s][吞吐率：58.82req/s] [内存消耗：1,117.29kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'include',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index/article/index/artid/9.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-04T17:53:52+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/scroll.png
+[ log ] localhost/qiye/public/static/index/images/scroll.png [运行时间：0.027002s][吞吐率：37.03req/s] [内存消耗：1,117.31kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'XSRF-TOKEN=eyJpdiI6Ik13QktxcmdlaHhxMlpZRGdtK3BrTWc9PSIsInZhbHVlIjoiRVpnVWFTZTRkRmFDbEJ5RVR6OFZ2TkZ0Sk54THo4aWU5SGVEWE5FRllpTDI4cndXcTNiWEV5NE9SakdRbjc1ZHZob0tVUm53RGxzMXJDRkt6K1ptV1E9PSIsIm1hYyI6IjYzMmQ2M2M0YWEwZGZjODkyMmNlOWZjMzk0MGM4YzY1MjQwMGU5MTllMTNlOTEzNTNhMGJjZDM4YjM3MDM1ZjgifQ%3D%3D; laravel_session=eyJpdiI6ImJVWWJlbnM2NE55V3ZsTkhiTXJBOGc9PSIsInZhbHVlIjoiSnRUdEU5S0dNdkJyallmRGZoRE5uUDRxaUt6VnlFcFNlRUZYWjNOYVp2YTE3M25raW9nOVdzZklaKzlCUG0rMTdsejgwVmVmaDlmQlBBNmhLd3RRSlE9PSIsIm1hYyI6IjgwOTdkMDFlMjJjOGNkZTY3MjRmNzhhOTBkMDljYmQzNzY2M2FiZTUzYTlkYzU3NzQ2ODBmMTE4ZjNhNTc4NjMifQ%3D%3D; PHPSESSID=0cv0sp9s42anhiuc40mkhp1v35; UM_distinctid=15e4c4f217c501-0d4dc915f8537d-6b1b1279-100200-15e4c4f217d228; bdshare_firstime=1504518808018; CNZZDATA1260722023=1044146006-1504518812-null%7C1504518812',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

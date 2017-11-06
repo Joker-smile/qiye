@@ -1,0 +1,440 @@
+[ 2017-05-04T19:08:37+08:00 ] ::1 ::1 GET /qiye/public/
+[ log ] localhost/qiye/public/ [运行时间：0.916052s][吞吐率：1.09req/s] [内存消耗：2,314.43kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\qiye\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\qiye\public/../application/index\view\index\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'getIndexRecommend',
+  4 => 'recommend',
+  5 => 'indexHotArticles',
+  6 => 'getNewArticles',
+  7 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.045003s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.016001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.039002s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.044003s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`thumb`,`a`.`desc`,`a`.`time`,`a`.`zan`,`a`.`click`,`b`.`catename` FROM `tp_article` `a` INNER JOIN `tp_cate` `b` ON `a`.`cateid`=`b`.`id` ORDER BY a.id desc LIMIT 10   [ RunTime:0.042002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_link` [ RunTime:0.037003s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_link` ORDER BY sort desc  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb` FROM `tp_article` ORDER BY click desc LIMIT 5   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb` FROM `tp_article` WHERE  `recommend` = 1 ORDER BY id desc LIMIT 4    [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_index` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T19:08:37+08:00 ] ::1 ::1 GET /qiye/public/static/index/style/jquery.error.js
+[ log ] localhost/qiye/public/static/index/style/jquery.error.js [运行时间：0.165009s][吞吐率：6.06req/s] [内存消耗：1,070.34kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'style',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://localhost/qiye/public/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T19:08:37+08:00 ] ::1 ::1 GET /qiye/public/static/index/style/jquery.form.js
+[ log ] localhost/qiye/public/static/index/style/jquery.form.js [运行时间：0.147008s][吞吐率：6.80req/s] [内存消耗：1,070.34kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'style',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://localhost/qiye/public/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T19:08:37+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/loading.gif
+[ log ] localhost/qiye/public/static/index/images/loading.gif [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：1,070.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T19:08:37+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/focus-bg2.png
+[ log ] localhost/qiye/public/static/index/images/focus-bg2.png [运行时间：0.032001s][吞吐率：31.25req/s] [内存消耗：1,070.34kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T19:08:37+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/sitemap-dot.gif
+[ log ] localhost/qiye/public/static/index/images/sitemap-dot.gif [运行时间：0.030002s][吞吐率：33.33req/s] [内存消耗：1,070.45kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T19:08:37+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/scroll.png
+[ log ] localhost/qiye/public/static/index/images/scroll.png [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,070.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T19:08:38+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/xh_area_title_h3.png
+[ log ] localhost/qiye/public/static/index/images/xh_area_title_h3.png [运行时间：0.062003s][吞吐率：16.13req/s] [内存消耗：1,070.45kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T19:10:08+08:00 ] ::1 ::1 GET /qiye/public/index.php/index/page/index/cateid/2
+[ log ] localhost/qiye/public/index.php/index/page/index/cateid/2 [运行时间：0.170009s][吞吐率：5.88req/s] [内存消耗：2,342.32kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'page',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://localhost/qiye/public/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'cateid' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Page->index[ D:\phpStudy\WWW\qiye\application\index\controller\Page.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\qiye\public/../application/index\view\page\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'getParents',
+  4 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate` WHERE  `id` = 2 LIMIT 1    [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 2 LIMIT 1    [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-05-04T19:10:08+08:00 ] ::1 ::1 GET /qiye/public/static/index/style/jquery.error.js
+[ log ] localhost/qiye/public/static/index/style/jquery.error.js [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,070.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'style',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://localhost/qiye/public/index.php/index/page/index/cateid/2',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T19:10:09+08:00 ] ::1 ::1 GET /qiye/public/static/index/style/jquery.form.js
+[ log ] localhost/qiye/public/static/index/style/jquery.form.js [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,070.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'style',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://localhost/qiye/public/index.php/index/page/index/cateid/2',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T19:10:09+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/scroll.png
+[ log ] localhost/qiye/public/static/index/images/scroll.png [运行时间：0.027001s][吞吐率：37.04req/s] [内存消耗：1,070.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-04T19:10:09+08:00 ] ::1 ::1 GET /qiye/public/static/index/images/body_bg.jpg
+[ log ] localhost/qiye/public/static/index/images/body_bg.jpg [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：1,070.41kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=elpjhegmejuf6njp0e67lmtjb5; bdshare_firstime=1493895554236; UM_distinctid=15bd31d250d1-06aa9ade6-4349052c-100200-15bd31d250e163; CNZZDATA1260722023=140544110-1493895555-%7C1493895555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://localhost/qiye/public/static/index/style/style.css',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'connection' => 'close',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

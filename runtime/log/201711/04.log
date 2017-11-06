@@ -1,0 +1,772 @@
+[ 2017-11-04T16:51:41+08:00 ] 127.0.0.1 127.0.0.1 GET /qiye/public/
+[ log ] localhost/qiye/public/ [运行时间：1.448083s][吞吐率：0.69req/s] [内存消耗：2,705.53kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'remember_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InZ2cW56Q1VjNE41VERWQUVnSWdRZmc9PSIsInZhbHVlIjoiOTdkZjFndDBBa0xQR0h1VDV6a0diVUV3U2ZPdnl5eFNYdkorZkRGMmxQZGNtcEM0bkNqS1UrZ0MwNjZXNGdaT2k4MWMyZmZaR2VxbzhOY1B6czFMVThOZnVUQ0JqQnFaOWJTalNYelQ0N29kK0hCQTFXcHhoVklXcXE0TU5QcWVhaVlSRFwvM3BBUDBkV1JQWWluaXMwOWt5VTg5NE0xWHVoOVlhdlg5V1pNS21XcTNvQmRnXC9YOHJ0MTZ3OGoranIiLCJtYWMiOiI0ZmEwNGY2NGY1ODZhY2I1NTE0NDhiNmZkMjdkMzQ5YTI0ZDViN2I3OGEyMTU2NDk3ZjFhZDlhNDY1ODkyZWU4In0%3D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508240566; bdshare_firstime=1508240634762; UM_distinctid=15f2a25b39972-0883cb3f62534d-6b1b1279-100200-15f2a25b39a2c9; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1508677928; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1509364508; PHPSESSID=ircoo2rskh4igciv16v2thv514; CNZZDATA1260722023=1658456057-1508240635-null%7C1509785482',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\qiye\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\qiye\public/../application/index\view\index\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'getIndexRecommend',
+  4 => 'recommend',
+  5 => 'indexHotArticles',
+  6 => 'getNewArticles',
+  7 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038002s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.102006s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.062003s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.060003s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`thumb`,`a`.`desc`,`a`.`time`,`a`.`zan`,`a`.`click`,`b`.`catename` FROM `tp_article` `a` INNER JOIN `tp_cate` `b` ON `a`.`cateid`=`b`.`id` ORDER BY a.id desc LIMIT 10   [ RunTime:0.034002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_link` [ RunTime:0.070004s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_link` ORDER BY sort desc  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb` FROM `tp_article` ORDER BY click desc LIMIT 5   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb` FROM `tp_article` WHERE  `recommend` = 1 ORDER BY id desc LIMIT 4    [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_index` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-11-04T16:51:48+08:00 ] 127.0.0.1 127.0.0.1 GET /qiye/public/index.php/index/artlist/index/cateid/6
+[ log ] localhost/qiye/public/index.php/index/artlist/index/cateid/6 [运行时间：0.278015s][吞吐率：3.60req/s] [内存消耗：2,734.66kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'artlist',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'remember_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InZ2cW56Q1VjNE41VERWQUVnSWdRZmc9PSIsInZhbHVlIjoiOTdkZjFndDBBa0xQR0h1VDV6a0diVUV3U2ZPdnl5eFNYdkorZkRGMmxQZGNtcEM0bkNqS1UrZ0MwNjZXNGdaT2k4MWMyZmZaR2VxbzhOY1B6czFMVThOZnVUQ0JqQnFaOWJTalNYelQ0N29kK0hCQTFXcHhoVklXcXE0TU5QcWVhaVlSRFwvM3BBUDBkV1JQWWluaXMwOWt5VTg5NE0xWHVoOVlhdlg5V1pNS21XcTNvQmRnXC9YOHJ0MTZ3OGoranIiLCJtYWMiOiI0ZmEwNGY2NGY1ODZhY2I1NTE0NDhiNmZkMjdkMzQ5YTI0ZDViN2I3OGEyMTU2NDk3ZjFhZDlhNDY1ODkyZWU4In0%3D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508240566; bdshare_firstime=1508240634762; UM_distinctid=15f2a25b39972-0883cb3f62534d-6b1b1279-100200-15f2a25b39a2c9; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1508677928; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1509364508; PHPSESSID=ircoo2rskh4igciv16v2thv514; CNZZDATA1260722023=1658456057-1508240635-null%7C1509785482',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'cateid' => '6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Artlist->index[ D:\phpStudy\PHPTutorial\WWW\qiye\application\index\controller\Artlist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\qiye\public/../application/index\view\artlist\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'hotArticles',
+  4 => 'page',
+  5 => 'article',
+  6 => 'getParents',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  (  cateid IN(7,8,6) ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  (  cateid IN(7,8,6) ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  (  cateid IN(7,8,7,8,6) ) ORDER BY click desc LIMIT 5   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate` WHERE  `id` = 6 LIMIT 1    [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-11-04T16:51:50+08:00 ] 127.0.0.1 127.0.0.1 GET /qiye/public/index.php/index/index/index.html
+[ log ] localhost/qiye/public/index.php/index/index/index.html [运行时间：0.203012s][吞吐率：4.93req/s] [内存消耗：2,705.77kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'remember_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InZ2cW56Q1VjNE41VERWQUVnSWdRZmc9PSIsInZhbHVlIjoiOTdkZjFndDBBa0xQR0h1VDV6a0diVUV3U2ZPdnl5eFNYdkorZkRGMmxQZGNtcEM0bkNqS1UrZ0MwNjZXNGdaT2k4MWMyZmZaR2VxbzhOY1B6czFMVThOZnVUQ0JqQnFaOWJTalNYelQ0N29kK0hCQTFXcHhoVklXcXE0TU5QcWVhaVlSRFwvM3BBUDBkV1JQWWluaXMwOWt5VTg5NE0xWHVoOVlhdlg5V1pNS21XcTNvQmRnXC9YOHJ0MTZ3OGoranIiLCJtYWMiOiI0ZmEwNGY2NGY1ODZhY2I1NTE0NDhiNmZkMjdkMzQ5YTI0ZDViN2I3OGEyMTU2NDk3ZjFhZDlhNDY1ODkyZWU4In0%3D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508240566; bdshare_firstime=1508240634762; UM_distinctid=15f2a25b39972-0883cb3f62534d-6b1b1279-100200-15f2a25b39a2c9; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1508677928; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1509364508; PHPSESSID=ircoo2rskh4igciv16v2thv514; CNZZDATA1260722023=1658456057-1508240635-null%7C1509785482',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index.php/index/artlist/index/cateid/6',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\qiye\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\qiye\public/../application/index\view\index\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'getIndexRecommend',
+  4 => 'recommend',
+  5 => 'indexHotArticles',
+  6 => 'getNewArticles',
+  7 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`thumb`,`a`.`desc`,`a`.`time`,`a`.`zan`,`a`.`click`,`b`.`catename` FROM `tp_article` `a` INNER JOIN `tp_cate` `b` ON `a`.`cateid`=`b`.`id` ORDER BY a.id desc LIMIT 10   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_link` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_link` ORDER BY sort desc  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb` FROM `tp_article` ORDER BY click desc LIMIT 5   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb` FROM `tp_article` WHERE  `recommend` = 1 ORDER BY id desc LIMIT 4    [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_index` = 1 ORDER BY id desc   [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-11-04T16:51:51+08:00 ] 127.0.0.1 127.0.0.1 GET /qiye/public/index.php/index/artlist/index/cateid/4
+[ log ] localhost/qiye/public/index.php/index/artlist/index/cateid/4 [运行时间：0.197011s][吞吐率：5.08req/s] [内存消耗：3,552.07kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'artlist',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'remember_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InZ2cW56Q1VjNE41VERWQUVnSWdRZmc9PSIsInZhbHVlIjoiOTdkZjFndDBBa0xQR0h1VDV6a0diVUV3U2ZPdnl5eFNYdkorZkRGMmxQZGNtcEM0bkNqS1UrZ0MwNjZXNGdaT2k4MWMyZmZaR2VxbzhOY1B6czFMVThOZnVUQ0JqQnFaOWJTalNYelQ0N29kK0hCQTFXcHhoVklXcXE0TU5QcWVhaVlSRFwvM3BBUDBkV1JQWWluaXMwOWt5VTg5NE0xWHVoOVlhdlg5V1pNS21XcTNvQmRnXC9YOHJ0MTZ3OGoranIiLCJtYWMiOiI0ZmEwNGY2NGY1ODZhY2I1NTE0NDhiNmZkMjdkMzQ5YTI0ZDViN2I3OGEyMTU2NDk3ZjFhZDlhNDY1ODkyZWU4In0%3D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508240566; bdshare_firstime=1508240634762; UM_distinctid=15f2a25b39972-0883cb3f62534d-6b1b1279-100200-15f2a25b39a2c9; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1508677928; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1509364508; PHPSESSID=ircoo2rskh4igciv16v2thv514; CNZZDATA1260722023=1658456057-1508240635-null%7C1509785482',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index.php/index/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'cateid' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Artlist->index[ D:\phpStudy\PHPTutorial\WWW\qiye\application\index\controller\Artlist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\qiye\public/../application/index\view\artlist\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'hotArticles',
+  4 => 'page',
+  5 => 'article',
+  6 => 'getParents',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  (  cateid IN(4) ) ORDER BY id desc LIMIT 1   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  (  cateid IN(4) ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  (  cateid IN(4) ) ORDER BY click desc LIMIT 5   [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate` WHERE  `id` = 4 LIMIT 1    [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-11-04T16:51:53+08:00 ] 127.0.0.1 127.0.0.1 GET /qiye/public/index.php/index/imglist/index/cateid/9
+[ log ] localhost/qiye/public/index.php/index/imglist/index/cateid/9 [运行时间：0.183010s][吞吐率：5.46req/s] [内存消耗：2,669.15kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'imglist',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'remember_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InZ2cW56Q1VjNE41VERWQUVnSWdRZmc9PSIsInZhbHVlIjoiOTdkZjFndDBBa0xQR0h1VDV6a0diVUV3U2ZPdnl5eFNYdkorZkRGMmxQZGNtcEM0bkNqS1UrZ0MwNjZXNGdaT2k4MWMyZmZaR2VxbzhOY1B6czFMVThOZnVUQ0JqQnFaOWJTalNYelQ0N29kK0hCQTFXcHhoVklXcXE0TU5QcWVhaVlSRFwvM3BBUDBkV1JQWWluaXMwOWt5VTg5NE0xWHVoOVlhdlg5V1pNS21XcTNvQmRnXC9YOHJ0MTZ3OGoranIiLCJtYWMiOiI0ZmEwNGY2NGY1ODZhY2I1NTE0NDhiNmZkMjdkMzQ5YTI0ZDViN2I3OGEyMTU2NDk3ZjFhZDlhNDY1ODkyZWU4In0%3D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508240566; bdshare_firstime=1508240634762; UM_distinctid=15f2a25b39972-0883cb3f62534d-6b1b1279-100200-15f2a25b39a2c9; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1508677928; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1509364508; PHPSESSID=ircoo2rskh4igciv16v2thv514; CNZZDATA1260722023=1658456057-1508240635-null%7C1509785482',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index.php/index/artlist/index/cateid/4',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'cateid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Imglist->index[ D:\phpStudy\PHPTutorial\WWW\qiye\application\index\controller\Imglist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\qiye\public/../application/index\view\imglist\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'page',
+  4 => 'articles',
+  5 => 'getParents',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_article` WHERE  (  cateid IN(9) ) ORDER BY id desc LIMIT 1   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  (  cateid IN(9) ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate` WHERE  `id` = 9 LIMIT 1    [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-11-04T16:51:54+08:00 ] 127.0.0.1 127.0.0.1 GET /qiye/public/index.php/index/page/index/cateid/2
+[ log ] localhost/qiye/public/index.php/index/page/index/cateid/2 [运行时间：0.273016s][吞吐率：3.66req/s] [内存消耗：2,705.14kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'page',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'remember_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InZ2cW56Q1VjNE41VERWQUVnSWdRZmc9PSIsInZhbHVlIjoiOTdkZjFndDBBa0xQR0h1VDV6a0diVUV3U2ZPdnl5eFNYdkorZkRGMmxQZGNtcEM0bkNqS1UrZ0MwNjZXNGdaT2k4MWMyZmZaR2VxbzhOY1B6czFMVThOZnVUQ0JqQnFaOWJTalNYelQ0N29kK0hCQTFXcHhoVklXcXE0TU5QcWVhaVlSRFwvM3BBUDBkV1JQWWluaXMwOWt5VTg5NE0xWHVoOVlhdlg5V1pNS21XcTNvQmRnXC9YOHJ0MTZ3OGoranIiLCJtYWMiOiI0ZmEwNGY2NGY1ODZhY2I1NTE0NDhiNmZkMjdkMzQ5YTI0ZDViN2I3OGEyMTU2NDk3ZjFhZDlhNDY1ODkyZWU4In0%3D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508240566; bdshare_firstime=1508240634762; UM_distinctid=15f2a25b39972-0883cb3f62534d-6b1b1279-100200-15f2a25b39a2c9; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1508677928; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1509364508; PHPSESSID=ircoo2rskh4igciv16v2thv514; CNZZDATA1260722023=1658456057-1508240635-null%7C1509785482',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index.php/index/imglist/index/cateid/9',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'cateid' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Page->index[ D:\phpStudy\PHPTutorial\WWW\qiye\application\index\controller\Page.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\qiye\public/../application/index\view\page\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'getParents',
+  4 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate` WHERE  `id` = 2 LIMIT 1    [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 2 LIMIT 1    [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-11-04T16:51:55+08:00 ] 127.0.0.1 127.0.0.1 GET /qiye/public/index.php/index/page/index/cateid/1
+[ log ] localhost/qiye/public/index.php/index/page/index/cateid/1 [运行时间：0.106006s][吞吐率：9.43req/s] [内存消耗：2,583.70kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'page',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'remember_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InZ2cW56Q1VjNE41VERWQUVnSWdRZmc9PSIsInZhbHVlIjoiOTdkZjFndDBBa0xQR0h1VDV6a0diVUV3U2ZPdnl5eFNYdkorZkRGMmxQZGNtcEM0bkNqS1UrZ0MwNjZXNGdaT2k4MWMyZmZaR2VxbzhOY1B6czFMVThOZnVUQ0JqQnFaOWJTalNYelQ0N29kK0hCQTFXcHhoVklXcXE0TU5QcWVhaVlSRFwvM3BBUDBkV1JQWWluaXMwOWt5VTg5NE0xWHVoOVlhdlg5V1pNS21XcTNvQmRnXC9YOHJ0MTZ3OGoranIiLCJtYWMiOiI0ZmEwNGY2NGY1ODZhY2I1NTE0NDhiNmZkMjdkMzQ5YTI0ZDViN2I3OGEyMTU2NDk3ZjFhZDlhNDY1ODkyZWU4In0%3D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508240566; bdshare_firstime=1508240634762; UM_distinctid=15f2a25b39972-0883cb3f62534d-6b1b1279-100200-15f2a25b39a2c9; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1508677928; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1509364508; PHPSESSID=ircoo2rskh4igciv16v2thv514; CNZZDATA1260722023=1658456057-1508240635-null%7C1509785482',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index.php/index/page/index/cateid/2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'cateid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Page->index[ D:\phpStudy\PHPTutorial\WWW\qiye\application\index\controller\Page.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\qiye\public/../application/index\view\page\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'getParents',
+  4 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate` WHERE  `id` = 1 LIMIT 1    [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `id` = 1 LIMIT 1    [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-11-04T16:51:57+08:00 ] 127.0.0.1 127.0.0.1 GET /qiye/public/index.php/index/index/index.html
+[ log ] localhost/qiye/public/index.php/index/index/index.html [运行时间：0.167009s][吞吐率：5.99req/s] [内存消耗：2,705.77kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'remember_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InZ2cW56Q1VjNE41VERWQUVnSWdRZmc9PSIsInZhbHVlIjoiOTdkZjFndDBBa0xQR0h1VDV6a0diVUV3U2ZPdnl5eFNYdkorZkRGMmxQZGNtcEM0bkNqS1UrZ0MwNjZXNGdaT2k4MWMyZmZaR2VxbzhOY1B6czFMVThOZnVUQ0JqQnFaOWJTalNYelQ0N29kK0hCQTFXcHhoVklXcXE0TU5QcWVhaVlSRFwvM3BBUDBkV1JQWWluaXMwOWt5VTg5NE0xWHVoOVlhdlg5V1pNS21XcTNvQmRnXC9YOHJ0MTZ3OGoranIiLCJtYWMiOiI0ZmEwNGY2NGY1ODZhY2I1NTE0NDhiNmZkMjdkMzQ5YTI0ZDViN2I3OGEyMTU2NDk3ZjFhZDlhNDY1ODkyZWU4In0%3D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508240566; bdshare_firstime=1508240634762; UM_distinctid=15f2a25b39972-0883cb3f62534d-6b1b1279-100200-15f2a25b39a2c9; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1508677928; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1509364508; PHPSESSID=ircoo2rskh4igciv16v2thv514; CNZZDATA1260722023=1658456057-1508240635-null%7C1509785482',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index.php/index/page/index/cateid/1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\qiye\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\qiye\public/../application/index\view\index\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'getIndexRecommend',
+  4 => 'recommend',
+  5 => 'indexHotArticles',
+  6 => 'getNewArticles',
+  7 => 'link',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`title`,`a`.`thumb`,`a`.`desc`,`a`.`time`,`a`.`zan`,`a`.`click`,`b`.`catename` FROM `tp_article` `a` INNER JOIN `tp_cate` `b` ON `a`.`cateid`=`b`.`id` ORDER BY a.id desc LIMIT 10   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_link` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_link` ORDER BY sort desc  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb` FROM `tp_article` ORDER BY click desc LIMIT 5   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`thumb` FROM `tp_article` WHERE  `recommend` = 1 ORDER BY id desc LIMIT 4    [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_index` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-11-04T16:51:59+08:00 ] 127.0.0.1 127.0.0.1 GET /qiye/public/index.php/index/article/index/artid/9.html
+[ log ] localhost/qiye/public/index.php/index/article/index/artid/9.html [运行时间：0.288017s][吞吐率：3.47req/s] [内存消耗：3,492.77kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'remember_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InZ2cW56Q1VjNE41VERWQUVnSWdRZmc9PSIsInZhbHVlIjoiOTdkZjFndDBBa0xQR0h1VDV6a0diVUV3U2ZPdnl5eFNYdkorZkRGMmxQZGNtcEM0bkNqS1UrZ0MwNjZXNGdaT2k4MWMyZmZaR2VxbzhOY1B6czFMVThOZnVUQ0JqQnFaOWJTalNYelQ0N29kK0hCQTFXcHhoVklXcXE0TU5QcWVhaVlSRFwvM3BBUDBkV1JQWWluaXMwOWt5VTg5NE0xWHVoOVlhdlg5V1pNS21XcTNvQmRnXC9YOHJ0MTZ3OGoranIiLCJtYWMiOiI0ZmEwNGY2NGY1ODZhY2I1NTE0NDhiNmZkMjdkMzQ5YTI0ZDViN2I3OGEyMTU2NDk3ZjFhZDlhNDY1ODkyZWU4In0%3D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508240566; bdshare_firstime=1508240634762; UM_distinctid=15f2a25b39972-0883cb3f62534d-6b1b1279-100200-15f2a25b39a2c9; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1508677928; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1509364508; PHPSESSID=ircoo2rskh4igciv16v2thv514; CNZZDATA1260722023=1658456057-1508240635-null%7C1509785482',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index.php/index/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ D:\phpStudy\PHPTutorial\WWW\qiye\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\qiye\public/../application/index\view\article\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'getParents',
+  4 => 'hotArticles',
+  5 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT `cateid` FROM `tp_article` WHERE  `id` = 9 LIMIT 1    [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate` WHERE  `id` = 4 LIMIT 1    [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_article`  SET `click`=click+1  WHERE  `id` = 9    [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `id` = 9 LIMIT 1    [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  (  cateid IN(1,2,3,4,5,6,7,8,9,4) ) ORDER BY click desc LIMIT 5   [ RunTime:0.005000s ]
+
+---------------------------------------------------------------
+[ 2017-11-04T16:52:36+08:00 ] 127.0.0.1 127.0.0.1 GET /qiye/public/index.php/index/article/index/artid/9.html
+[ log ] localhost/qiye/public/index.php/index/article/index/artid/9.html [运行时间：0.158009s][吞吐率：6.33req/s] [内存消耗：3,492.83kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\qiye\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'remember_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6InZ2cW56Q1VjNE41VERWQUVnSWdRZmc9PSIsInZhbHVlIjoiOTdkZjFndDBBa0xQR0h1VDV6a0diVUV3U2ZPdnl5eFNYdkorZkRGMmxQZGNtcEM0bkNqS1UrZ0MwNjZXNGdaT2k4MWMyZmZaR2VxbzhOY1B6czFMVThOZnVUQ0JqQnFaOWJTalNYelQ0N29kK0hCQTFXcHhoVklXcXE0TU5QcWVhaVlSRFwvM3BBUDBkV1JQWWluaXMwOWt5VTg5NE0xWHVoOVlhdlg5V1pNS21XcTNvQmRnXC9YOHJ0MTZ3OGoranIiLCJtYWMiOiI0ZmEwNGY2NGY1ODZhY2I1NTE0NDhiNmZkMjdkMzQ5YTI0ZDViN2I3OGEyMTU2NDk3ZjFhZDlhNDY1ODkyZWU4In0%3D; Hm_lvt_080836300300be57b7f34f4b3e97d911=1508240566; bdshare_firstime=1508240634762; UM_distinctid=15f2a25b39972-0883cb3f62534d-6b1b1279-100200-15f2a25b39a2c9; Hm_lvt_99c2c06a529fc4c8787deb597141fe76=1508677928; Hm_lvt_d7e112eaeea65921aeaadcc0af8f2853=1509364508; PHPSESSID=ircoo2rskh4igciv16v2thv514; CNZZDATA1260722023=1658456057-1508240635-null%7C1509785482',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/qiye/public/index.php/index/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'artid' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\index\controller\Article->index[ D:\phpStudy\PHPTutorial\WWW\qiye\application\index\controller\Article.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\qiye\public/../application/index\view\article\index.html [ array (
+  0 => 'confs',
+  1 => 'cateres',
+  2 => 'recBottom',
+  3 => 'getParents',
+  4 => 'hotArticles',
+  5 => 'articles',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_conf` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `ename`,`value` FROM `tp_conf`  [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_cate` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 0 ORDER BY sort desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 6   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 3   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 9   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 2   [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `pid` = 1   [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate` WHERE  `rec_bottom` = 1 ORDER BY id desc   [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_article` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT `cateid` FROM `tp_article` WHERE  `id` = 9 LIMIT 1    [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`pid`,`catename` FROM `tp_cate` WHERE  `id` = 4 LIMIT 1    [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] UPDATE `tp_article`  SET `click`=click+1  WHERE  `id` = 9    [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  `id` = 9 LIMIT 1    [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_cate`  [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tp5;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `tp_article` WHERE  (  cateid IN(1,2,3,4,5,6,7,8,9,4) ) ORDER BY click desc LIMIT 5   [ RunTime:0.003000s ]
+
+---------------------------------------------------------------

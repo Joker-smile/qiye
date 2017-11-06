@@ -1,0 +1,17 @@
+<div id="footer_wrap">
+    <div id="footer">
+        <div class="footer_navi">
+            <ul class="menu">
+                {volist name="recBottom" id="cate"}
+                <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156">
+                    <a href="http://127.0.0.1/qiye/public/index.php/index/{if condition="$cate['type'] eq 0"}artlist{elseif condition="$cate['type'] eq 2" /}imglist{else /}page{/if}/index/cateid/{$cate.id}" target="_blank">{$cate.catename}</a></li>
+                {/volist}
+         
+            </ul>
+        </div>
+        <div class="footer_info">
+            <span class="legal">Copyright &#169; 2016-2020  版权所有&#160;&#160;&#160;<a href="http://www.miitbeian.gov.cn ">
+                ,闽ICP备16038037号</a>&#160;&#160;&#160;
+        </div>
+    </div>
+</div>
